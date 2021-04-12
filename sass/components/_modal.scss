@@ -1,0 +1,47 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 40px;
+}
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--accent-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.icon-close {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
