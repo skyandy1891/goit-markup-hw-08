@@ -554,6 +554,7 @@ img {
   .contact-list__tel-link {
     display: inline-flex;
     align-items: center;
+    padding-top: 10px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.14;
