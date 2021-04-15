@@ -94,11 +94,32 @@
 
 // =============TABLET
 
-// @media screen and (min-width: 768px) {
-//   .container {
-//     width: 768px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2f303a;
+    // text-align: center;
+  }
+  .footer-adress {
+    display: block;
+
+    margin-left: 76px;
+  }
+  .location-link {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 // .footer {
 //   background: #2f303a;

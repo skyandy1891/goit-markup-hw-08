@@ -273,6 +273,7 @@ img {
   .contact-list__mail-link {
     display: inline-flex;
     align-items: center;
+    padding-top: 10px;
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -382,6 +383,9 @@ img {
   }
   .contact-list {
     margin-left: auto;
+  }
+  .contact-box {
+    display: flex;
   }
   .contact-list__tel-link {
     align-items: center;
@@ -499,6 +503,31 @@ img {
   .subscribe-btn {
     margin-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2f303a;
+  }
+  .footer-adress {
+    display: block;
+    margin-left: 76px;
+  }
+  .location-link {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 

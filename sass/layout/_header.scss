@@ -106,6 +106,7 @@
   .contact-list__mail-link {
     display: inline-flex;
     align-items: center;
+    padding-top: 10px;
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -227,6 +228,9 @@
 
   .contact-list {
     margin-left: auto;
+  }
+  .contact-box {
+    display: flex;
   }
 
   .contact-list__tel-link {
