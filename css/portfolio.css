@@ -409,6 +409,10 @@ img {
     text-transform: uppercase;
     color: #ffffff;
   }
+  .subscribe-btn {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
 }
 
 .footer-logo {
