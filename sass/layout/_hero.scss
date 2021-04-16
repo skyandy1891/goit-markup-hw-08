@@ -1,28 +1,67 @@
-.hero-item {
-  font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1, 36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 696px;
-  height: 120px;
-  margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mobile/hero/hero-mobile.jpg');
+  }
+  .hero-item {
+    // display: flex;
+    // text-align: center;
+    // margin-bottom: 30px;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // font-weight: 900;
+    // color: #ffffff;
+    font-family: var(--main-font);
+    margin-bottom: 40px;
+    color: #ffffff;
+
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
-.hero {
-  background: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/bg.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1600px;
-  height: 600px;
+
+// ================desctop
+@media screen and (min-width: 1200px) {
+  .hero-item {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 696px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .hero {
+    background: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/bg.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+  }
 }

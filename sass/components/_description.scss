@@ -1,8 +1,23 @@
-.description {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+@media screen and(max-width: 767px) {
+  .descrition {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+  }
+}
+@media screen and(min-width: 1200px) {
+  .description {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }

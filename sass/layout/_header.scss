@@ -157,6 +157,7 @@
 
 @media screen and (min-width: 1200px) {
   .header .container {
+    width: 1200px;
     align-items: center;
     display: flex;
   }
@@ -168,12 +169,10 @@
     border-bottom: 1px solid #ececec;
   }
 
-  // ========================MAIN-LOGO
-
   // =========================NAVIGATION
-  // .navigation-list__navigation-item:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  .navigation-list__navigation-item:not(:last-child) {
+    margin-right: 50px;
+  }
   .navigation-list {
     display: flex;
     align-items: center;

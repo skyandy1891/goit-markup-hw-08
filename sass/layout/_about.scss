@@ -1,3 +1,41 @@
+@media screen and(max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  .about-title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .features {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+  }
+}
+
 // ========DESCTOP=============
 
 // .function {
