@@ -27,6 +27,31 @@
 }
 // ================tablet
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/hero/Hero_tablet@2x.jpg');
+  }
+  .hero-item {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 // ================desctop
