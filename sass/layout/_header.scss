@@ -17,10 +17,14 @@
     top: 10px;
     right: 15px;
   }
+  .svg:transition {
+    fill: var(--accent-color);
+  }
 
   .burger-icon {
     fill: #000;
   }
+
   .mobile-menu {
     position: fixed;
     z-index: 999;
@@ -168,7 +172,18 @@
   justify-content: start;
 }
 .mobile-social-link {
-  margin-right: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-social-link:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 // ====================DECKTOP

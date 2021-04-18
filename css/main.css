@@ -295,50 +295,63 @@ img {
   transition-duration: 300ms;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 40px;
-}
-
-.modal-close-btn {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  margin-left: auto;
-  border-radius: 50%;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  outline: none;
-}
-
-.modal-close-btn:focus, .modal-close-btn:hover {
-  outline: none;
-  border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-close:hover, .icon-close:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+@media screen and (max-width: 767px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 40px;
+  }
+  .modal-form-field {
+    margin-top: 10px;
+  }
+  .modal-form-check-desk {
+    display: flex;
+    align-items: center;
+  }
+  .modal-form-check-desk::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    outline: 1px solid #000000;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .modal-form-term:checked + .modal-form-check-desk::before {
+    background-image: url("../images/checkbox-icon.svg");
+    background-repeat: no-repeat;
+    background-color: var(--accent-color);
+    background-position: center;
+  }
+  .modal-form-term:focus + .modal-form-check-desk::before {
+    box-shadow: 0 0 0 2px var(--accent-color);
+  }
+  .modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .icon-close:hover, .icon-close:focus {
+    fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal-form {
@@ -418,29 +431,9 @@ img {
 }
 
 .modal-form-check-desk {
-  display: flex;
-  align-items: center;
-}
-
-.modal-form-check-desk::before {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 16px;
-  outline: 1px solid #000000;
-  cursor: pointer;
-  margin-right: 8px;
-}
-
-.modal-form-term:checked + .modal-form-check-desk::before {
-  background-image: url("../images/checkbox-icon.svg");
-  background-repeat: no-repeat;
-  background-color: var(--accent-color);
-  background-position: center;
-}
-
-.modal-form-term:focus + .modal-form-check-desk::before {
-  box-shadow: 0 0 0 2px var(--accent-color);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-btn {
@@ -479,6 +472,9 @@ img {
     position: absolute;
     top: 10px;
     right: 15px;
+  }
+  .svg:transition {
+    fill: var(--accent-color);
   }
   .burger-icon {
     fill: #000;
@@ -629,7 +625,19 @@ img {
 }
 
 .mobile-social-link {
-  margin-right: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-social-link:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .main-logo {

@@ -67,26 +67,9 @@
 }
 
 .modal-form-check-desk {
-  display: flex;
-  align-items: center;
-  &::before {
-    display: block;
-    content: '';
-    width: 16px;
-    height: 16px;
-    outline: 1px solid #000000;
-    cursor: pointer;
-    margin-right: 8px;
-    .modal-form-term:checked + & {
-      background-image: url('../images/checkbox-icon.svg');
-      background-repeat: no-repeat;
-      background-color: var(--accent-color);
-      background-position: center;
-    }
-    .modal-form-term:focus + & {
-      box-shadow: 0 0 0 2px var(--accent-color);
-    }
-  }
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-btn {
