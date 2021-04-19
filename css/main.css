@@ -857,6 +857,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .activity {
     display: none;
