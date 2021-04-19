@@ -35,6 +35,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .clients-list-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 // =========desctop
@@ -42,11 +47,7 @@
   .clients {
     padding: 94px 200px;
   }
-  // .clients-list {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin: 0auto;
-  // }
+
   .clients-list-box {
     display: flex;
     justify-content: space-between;
