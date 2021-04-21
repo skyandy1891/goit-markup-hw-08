@@ -486,7 +486,6 @@ img {
     width: 480px;
   }
   .footer-logo {
-    display: block;
     margin-bottom: 20px;
     margin-right: 0;
     font-family: var(--secondary-font);
@@ -629,14 +628,16 @@ img {
   .container {
     width: 768px;
   }
-  .footer {
+  .footer-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #2f303a;
-  }
-  .footer-adress {
-    display: block;
+    background-color: #2f303a;
   }
   .location-link {
     text-align: center;

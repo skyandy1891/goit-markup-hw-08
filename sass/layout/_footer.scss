@@ -3,7 +3,6 @@
     .container {
       width: 480px;
     }
-    // display: block;
     padding-top: 60px;
     padding-bottom: 60px;
     background: #2f303a;
@@ -11,7 +10,6 @@
     align-items: center;
   }
   .footer-logo {
-    display: block;
     margin-bottom: 20px;
     margin-right: 0;
     font-family: var(--secondary-font);
@@ -160,16 +158,18 @@
   .container {
     width: 768px;
   }
-  .footer {
+  .footer-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #2f303a;
-    // text-align: center;
+    background-color: #2f303a;
   }
-  .footer-adress {
-    display: block;
-  }
+
   .location-link {
     text-align: center;
   }
