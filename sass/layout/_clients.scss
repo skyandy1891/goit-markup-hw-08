@@ -44,12 +44,13 @@
 
 // =========desctop
 @media screen and (min-width: 1200px) {
-  .clients {
-    padding: 94px 200px;
-  }
+  // .clients {
+  //   padding: 94px 200px;
+  // }
 
   .clients-list-box {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin: 0 auto;
   }

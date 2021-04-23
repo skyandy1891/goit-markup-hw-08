@@ -103,10 +103,13 @@
     <main>
                                                 <!-- HERO -->
         <section class="hero section">
-            <h2 class="hero-item">
+            <div class="hero-group">
+                <h2 class="hero-item">
                 Эффективные решения для вашего бизнеса
             </h2>
             <button type=button class="modal-btn" data-modal-open> Заказать услугу </button>
+            </div>
+            
         </section>
 
                                                 <!-- ABOUT -->
@@ -174,7 +177,7 @@
         
                              <!-- деятельность (ТОЛЬКО ДЛЯ ДЕСКТОПА)-->
 
-        <!-- <section class="activity section">
+        <section class="activity section">
 
             <div class="activity-container container">
                 <h2 class="visually-hidden">галерея работ</h2>
@@ -185,16 +188,25 @@
 
                     <ul class="activity-item list">
                         <li class="activity-item-img">
-                            <img src="./images/деятельность/box-1.png" alt="написание кода" width=370 height="294">
                             <p class="activity-text">десктопные приложения</p>
+                            <picture>
+                                <source srcset="./images/desctop/Деятельность/box1.jpg 1x, ./images/desctop/Деятельность/box1@2x.jpg 2x" media="(min-width:1200px)">
+                                <img src="./images/desctop/Деятельность/" alt="десктопные приложения">
+                            </picture>
                         </li>
                         <li class="activity-item-img">
-                            <img src="./images/деятельность/box-2.png" alt="адаптация для мобильных устройств" width=370 height="294">
                             <p class="activity-text">мобильные приложения</p>
+                            <picture>
+                                <source srcset="./images/box2.jpg 1x, ./images/desktop@2x/features@2x-2.jpg 2x" media="(min-width:1200px)">
+                                <img src="./images/box2.jpg" alt="мобильные приложения">
+                            </picture>
                         </li>
                         <li class="activity-item-img">
-                             <img src="./images/деятельность/box-3.png" alt="работа с графикой" width=370 height="294">
                              <p class="activity-text">дизайнерские решения</p>
+                            <picture>
+                                <source srcset="./images/box3.jpg 1x, ./images/desktop@2x/features@2x-3.jpg 2x" media="(min-width:1200px)">
+                                <img src="./images/box3.jpg" alt="дизайнерские решения">
+                            </picture>
                         </li>   
                
                     </ul>
@@ -202,7 +214,7 @@
                 
             </div>
             
-        </section> -->
+        </section>
 
                                                 <!-- НАША КОМАНДА -->
 
@@ -386,7 +398,7 @@
                     <div class="card">
                         
                         <picture>
-                            <source srcset="./images/desktop/Михаил/misha.jpg 1x, ./images/desktop/Михаил/Михаил/misha@2x.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./images/desktop/Михаил/misha.jpg 1x, ./images/desktop/Михаил/misha@2x.jpg 2x" media="(min-width:1200px)">
                             <source srcset="./images/tablet/Михаил/misha.jpg 1x, ./images/tablet/Михаил/misha@2x.jpg 2x" media="(min-width:768px)">
                             <source srcset="./images/mobile/Михаил/misha.jpg 1x, ./images/mobile/Михаил/misha@2x.jpg 2x" media="(min-width:320px)">
                             <img class="card-img" src="./images/desktop/Михаил/" alt="Михаил Ермаков">
@@ -592,7 +604,7 @@
 
                                                 <!--МОДАЛЬНОЕ ОКНО-->
                                                           
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
 
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -652,10 +664,10 @@
             </form>
 
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     
 </body>
 </html>
