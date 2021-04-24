@@ -1,15 +1,21 @@
-@media screen and(min-width: 480px) {
+@media screen and(max-width: 767px) {
   .buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: -8px;
+    margin-bottom: 40px;
+  }
+  .buttons-item {
+    margin-top: 8px;
+    margin-right: 8px;
   }
 }
 
-// .buttons {
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
-//   margin-bottom: 50px;
-// }
+@media screen and(min-width: 768px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
