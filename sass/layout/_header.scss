@@ -60,6 +60,17 @@
   display: block;
   margin-bottom: 64px;
 }
+.mobile-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 .mobile-contact-item {
   padding-bottom: 32px;
 }
