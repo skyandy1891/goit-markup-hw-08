@@ -1066,17 +1066,6 @@ img {
   }
 }
 
-.card-name {
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 0 auto;
-  padding-right: 0 auto;
-  border: 1px solid #eeeeee;
-  border-top: none;
-  background: #ffffff;
-}
-
 .card-title {
   align-items: center;
   padding-top: 30px;
@@ -1084,8 +1073,7 @@ img {
   border: 1px solid #eeeeee;
   border-top: none;
   background: #ffffff;
-  padding-left: 24px;
-  padding-right: 24px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .projects {
