@@ -1383,7 +1383,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 15px;
+  margin: z15px 15px;
   width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -1600,7 +1600,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .footer-social-list {
     display: flex;
