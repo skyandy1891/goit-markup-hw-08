@@ -1,36 +1,35 @@
 @media screen and (max-width: 767px) {
-  // .container {
-  //   width: 480px;
-}
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.clients-list-box {
-  display: flex;
-  flex-wrap: wrap;
-}
-.clients-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: z15px 15px;
-  width: 210px;
-  height: 90px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  &:hover {
-    border-color: var(--accent-color);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-}
-.client-logo {
-  fill: #afb1b8;
-  .clients-list-item:hover & {
-    fill: var(--accent-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .clients-list-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .clients-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    width: 210px;
+    height: 90px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover {
+      border-color: var(--accent-color);
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  .client-logo {
+    fill: #afb1b8;
+    .clients-list-item:hover & {
+      fill: var(--accent-color);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
@@ -38,7 +37,30 @@
   .clients-list-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .clients-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    width: 210px;
+    height: 90px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover {
+      border-color: var(--accent-color);
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  .client-logo {
+    fill: #afb1b8;
+    .clients-list-item:hover & {
+      fill: var(--accent-color);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
@@ -59,14 +81,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // flex-basis: calc(100% / 6 - 30px);
     width: 170px;
     height: 90px;
     border: 1px solid rgba(175, 177, 184, 1);
     box-sizing: border-box;
     border-radius: 4px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
     &:hover {
       border-color: var(--accent-color);
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
