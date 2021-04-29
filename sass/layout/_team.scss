@@ -2,11 +2,8 @@
   .team {
     background-color: #f5f4fa;
   }
-  // .team-list {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  .card {
+
+  .team-list-item {
     max-width: 100%;
   }
   .card-name {
@@ -23,10 +20,7 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .card-img {
-    width: 100%;
-    height: auto;
-  }
+
   .name {
     text-align: center;
     font-weight: 500;
@@ -158,9 +152,6 @@
     height: auto;
   }
 
-  // .card {
-  //   flex-basis: calc((100%-120px) / 4);
-  // }
   .team-list {
     display: flex;
     flex-wrap: nowrap;
@@ -169,6 +160,8 @@
   .team-list-item {
     flex-basis: calc((100%-120px) / 4);
     margin-top: 30px;
+    // width: 270px;
+    // height: 428px;
   }
 
   .function {
