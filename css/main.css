@@ -1503,8 +1503,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: calc(100% / 3 - 30px);
     margin: 15px 15px;
-    width: 210px;
+    width: 226px;
     height: 90px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;
